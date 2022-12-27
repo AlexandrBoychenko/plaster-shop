@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plaster Shop</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="config.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="shop-main-content">
+      <h2>Plaster Shop Calculator</h2>
+      <p>
+        If you click the "Add Material" button, the form-data will be extended
+        by new field each time.
+      </p>
+
+      <form class="shop-form">
+        <!-- Custom inputs is dynamically inserted here -->
+        <div class="buttons">
+          <input
+            type="button"
+            value="Add Material"
+            class="shop-form-btn shop-add-btn"
+          />
+          <input type="submit" value="Calculate" class="shop-form-btn" />
+          <input
+            type="button"
+            value="Reset"
+            class="shop-form-btn shop-reset-btn"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

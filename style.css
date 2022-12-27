@@ -1,0 +1,62 @@
+* {
+  font-family: system-ui;
+}
+
+.shop-main-content,
+.shop-form {
+  width: fit-content;
+  margin: auto;
+}
+
+.shop-main-content > * {
+  text-align: left;
+}
+
+.shop-main-content {
+  text-align: center;
+}
+
+.shop-form {
+  text-align: left;
+  min-width: 35rem;
+}
+
+.input-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-holder > select,
+.input-holder > input {
+  min-height: 1.5rem;
+}
+
+.input-holder > input {
+  max-width: 12rem;
+}
+
+select {
+  width: 17rem;
+}
+
+select > option {
+  zoom: 1.2;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-form-btn {
+  margin-bottom: 1rem;
+  min-width: 7rem;
+}
+
+.input-remove-btn {
+  width: 2rem;
+}
+
+.input-remove-btn-img {
+  max-width: -webkit-fill-available;
+}
