@@ -1,7 +1,7 @@
 window.config = {
   inputsConfig: [
     {
-      name: 'Travertin',
+      name: 'Travertinhesh mater',
       weight: 15,
       price: 3200,
     },
@@ -18,4 +18,5 @@ window.config = {
   ],
   resultText: "You've filled out all the options, your result is",
   resultWarningText: "You haven't filled out all the options, your result is",
+  resultErrorText: "Some or each of the values is not a number"
 };

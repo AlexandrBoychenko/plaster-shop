@@ -60,3 +60,50 @@ select > option {
 .input-remove-btn-img {
   max-width: -webkit-fill-available;
 }
+
+.count-result-text {
+  text-align: center;
+}
+
+/* Tablet and below */
+@media only screen and (max-device-width: 600px) {
+  * {
+    font-size: 1.5rem;
+  }
+
+  .shop-main-content {
+    padding: 1rem;
+  }
+
+  .shop-main-content,
+  .shop-form {
+    width: auto;
+  }
+
+  input,
+  select,
+  button {
+    padding: 1rem;
+    border: 1px solid #000000;
+  }
+
+  select > option {
+    zoom: normal;
+  }
+
+  .buttons {
+    height: 5rem;
+  }
+
+  .input-remove-btn {
+    width: 4rem;
+  }
+
+  .shop-form-btn {
+    width: 30%;
+  }
+
+  .input-holder {
+    height: 5rem;
+  }
+}

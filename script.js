@@ -9,7 +9,8 @@ const mainForm = document.querySelector('.shop-form');
 const mainFormAddBtn = document.querySelector('.shop-add-btn');
 const mainFormResetBtn = document.querySelector('.shop-reset-btn');
 
-const { inputsConfig, resultText, resultWarningText } = window.config;
+const { inputsConfig, resultText, resultWarningText, resultErrorText } =
+  window.config;
 
 let step = 0;
 
@@ -112,10 +113,14 @@ const getResultText = () => {
 const addResultMessage = () => {
   document.querySelector(`.${COUNT_RESULT_TEXT}`)?.remove();
 
+  const calculatedResult = countInputsSum();
+
   const resultMessage = document.createElement('p');
-  const messageTextNode = document.createTextNode(
-    `${getResultText()}: ${countInputsSum().toFixed(2)}`
-  );
+  const messageTextNode = isNaN(calculatedResult)
+    ? resultErrorText
+    : document.createTextNode(
+        `${getResultText()}: ${calculatedResult.toFixed(2)}`
+      );
   resultMessage.setAttribute('class', COUNT_RESULT_TEXT);
   resultMessage.append(messageTextNode);
   mainForm.after(resultMessage);
